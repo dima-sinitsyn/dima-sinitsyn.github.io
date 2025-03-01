@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <link rel="stylesheet" href="source/styles/bgvideo.css">
+    <link rel="stylesheet" href="source/styles/image.css">
+    <!-- <link rel="stylesheet" href="source/styles/work.css"> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon-16x16.png">
+    <link rel="manifest" href="source/files/site.webmanifest">
+
+    <title>Rob@t- Работа в студии/вакансии</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/" id="blink6">R@bot-studio</a>
+                <span id="clock" class="clock"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="pricing.html">Покупки</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Работа/контакты
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link active" class="dropdown-item" href="work.html">Работа в
+                                        студии</a></li>
+                                <li><a class="dropdown-item" href="vacansy.html">Вакансии</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Контакты</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Культура/спорт
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sport.html">Спорт</a></li>
+                                <li><a class="dropdown-item" href="history-achievements.html">Разработчики/история
+                                        студии</a></li>
+                                <li><a class="dropdown-item" href="news.html">Новости
+                                        студии</a></li>
+                                <li><a class="dropdown-item" href="news1.html">Новости
+                                        студии (для мобильных телефонов)</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Разное</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Пользователь
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="registration.html">Регистрация на сайте</a></li>
+                                <li><a class="dropdown-item" href="login.html">логин</a></li>
+                                <li><a class="dropdown-item" href="profile.html">профиль </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instagram.com"><img style="width: 30px; margin-inline: 5px; "
+                                    src="source/images/icons8-instagram-48.png" alt="111"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://vk.com"><img style="width: 30px; margin-inline: 5px;"
+                                    src="source/images/icons8-vk-48.png" alt="222">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://web.whatsapp.com/"><img
+                                    style="width: 30px; margin-inline: 5px;" src="source/images/icons8-whatsapp-48.png"
+                                    alt="222">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://telegram.org/"><img
+                                    style="width: 30px; margin-inline: 5px; " src="source/files/tg.png" alt="111"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/"><img
+                                    style="width: 30px; margin-inline: 5px;" src="source/files/yt.png" alt="222">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section>
+        <form class="d-flex" role="search">
+            <!-- <input class="form-control me-2" id="key" name="key" type="search" placeholder="Поиск на сайте"
+                aria-label="Search">
+            <button id="btn" type="submit" class="btn btn-outline-success">Поиск</button> -->
+
+            <input class="form-control me-2"id="text-to-find"  type="Search" placeholder="Поиск на сайте" aria-label="Search" value="">
+            <button type="button" type="submit" class="btn btn-outline-success" onclick="javascript: FindOnPage('text-to-find'); return false;">Поиск</button> 
+        </form>
+        <div class="col-lg-4 col-md-12 media-links text-center">
+            <p style="font-style: italic;"><a href="#"> Торговые партнеры </a> </p>
+            <a href="https://www.mvideo.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                    src="source/images/proekt2/1562672636542.jpeg" alt="111"></a>
+            <a href="https://www.dns-shop.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                    src="source/images/proekt2/1643605893_8-papik-pro-p-dns-logotip-8-be54e2c0eaba18ef70c4b4b7bcc57d5a-1.png"
+                    alt="222"></a>
+            <a href="https://www.citilink.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                    src="source/images/proekt2/31440129-65bde909e8b93.jpg" alt="111"></a>
+        </div>
+        <div class="bgvideo">
+            <video src="source/files2/my/mixkit-software-developer-working-on-code-screen-close-up-1728-hd-ready.mp4"
+                type="video/mov" autoplay muted loop></video>
+            <div class="effect"></div>
+            <div class="video-text">
+                <h1 id="blink7"><i>R@bot-work</i></h1>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="row">
+                        <div class="nav-container">
+                            <nav>
+                                <ul>
+                                    <li><a href="#" style="color: beige;">Статьи</a></li>
+                                    <li><a href="#" style="color: beige;">Обсуждения и темы </a></li>
+                                    <li><a href="#" style="color: beige;">Форумы </a></li>
+                                </ul>
+                            </nav>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" style="color: beige;">Frontend разработка</a></li>
+                                    <li><a href="#" style="color: beige;">Backend разработка</a></li>
+                                    <li><a href="https://netology.ru/blog/05-2024-sql" style="color: beige;">SQL
+                                            разработка</a></li>
+                                    <li><a href="https://skillbox.ru/media/code/kto_takoy_programmist_1s_chem_on_zanimaetsya_i_skolko_poluchaet/"
+                                            style="color: beige;">1с разработка</a></li>
+                                    <li><a href="https://skillbox.ru/media/design/chem_zanimaetsya_veb_dizayner_na_samom_dele/"
+                                            style="color: beige;">Web-design разработка</a></li>
+                                    <li><a href="https://skillbox.ru/media/code/fullstack-razrabotchik-kto-takoy-chto-delaet-i-skolko-zarabatyvaet/"
+                                            style="color: beige;">Full-stack разработка</a></li>
+                                    <li><a href="https://vc.ru/edu/1627955-react-razrabotchik-kto-eto-chem-zanimaetsya-i-skolko-zarabatyvaet"
+                                            style="color: beige;">React разработка</a></li>
+                                    <li><a href="https://www.kp.ru/edu/rabota/professiya-javascript-razrabotchik/"
+                                            style="color: beige;">Javascript разработка</a></li>
+                                    <li><a href="https://skillbox.ru/media/code/kto-takoy-razrabotchik-na-php-tekhnologii-navyki-zarplaty-vakansii/"
+                                            style="color: beige;">PhP разработка</a></li>
+                                    <li><a href="https://skillbox.ru/media/code/kto-takoy-razrabotchik-na-s/"
+                                            style="color: beige;">C++ разработка</a></li>
+                                    <li><a href="https://vc.ru/edu/1642449-razrabotchik-na-nodejs-kto-eto-chem-zanimaetsya-i-kak-im-stat"
+                                            style="color: beige;">Node.js разработка</a></li>
+                                </ul>
+                            </nav>
+                            <p style="color: brown;font-style:italic;font-size:30px;text-decoration:underline"> Статьи:
+                            </p>
+                            <ol>
+                                <li><a href="#">Frontend</a> </li>
+                                <li> <a href="#">HTML: ключевая фронтенд-технология</a> </li>
+                                <li><a href="#">Структура HTML-документа</a></li>
+                                <ol>
+                                    <li><a href="#">Как работает HTML</a></li>
+                                    <li><a href="#">HTML5</a></li>
+                                </ol>
+                                </li>
+                                <li><a href="#">CSS: стилизация</a></li>
+                                <li><a href="#">CSS-фреймворки</a></li>
+                                <li><a href="#">Препроцессоры — Sass и LESS</a></li>
+                                <li><a href="#">Литература</a></li>
+                                <li><a href="#">Ссылки</a></li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 text-center">
+                    <div class="row">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 text-center">
+                    <div class="row">
+                        <h2 style="color: blueviolet;text-decoration:underline">О Frontend - разработке</h2>
+                        <p>
+                            Фронтенд веб-сайта — это все, что пользователь видит и с чем может взаимодействовать при
+                            помощи браузера. Создание этой визуальной части называется фронтенд-разработкой. Дизайнеров,
+                            создающих пользовательские интерфейсы, тоже можно в какой-то смысле назвать
+                            фронтенд-разработчиками, потому что они совместно работают над этой же частью проекта.
+
+                            Для разработки фронтенда в качестве базовых инструментов используются: HTML (для создания
+                            базовой структуры страниц и контента), CSS (для стилизации внешнего вида) и JavaScript (для
+                            добавления интерактивности). Такой же набор инструментов используется в процессе создания
+                            прогрессивных веб-приложений — мобильных приложений, которые выглядят, как нативные, но при
+                            этом создаются с участием фронтенд-технологий. Подробнее об этом можно почитать в статье по
+                            ссылке.
+                        </p>
+                        <hr style="color: black;height:15px;">
+                        <p>
+                            HTML (от англ. Hypertext Markup Language) — это язык гипертекстовой разметки,
+                            предназначенный для создания веб-сайтов, которые впоследствии могут просматриваться при
+                            помощи доступа к интернету. HTML обычно используется для структурирования веб-документа. Он
+                            определяет такие элементы, как заголовки или абзацы, и позволяет вставлять изображения,
+                            видео и другие медиафайлы.</p>
+                        <p> Гипертекст — способ, с помощью которого мы путешествуем по интернету, переходя по
+                            гиперссылкам, которые ведут на другие страницы. «Гипер» отсылает к нелинейности, которая
+                            позволяет перемещаться в любое место, поскольку этот процесса не подразумевает
+                            предопределенного порядка.
+                            Разметка определяет качества, которыми наделяется текст внутри HTML-тегов. Теги определяют,
+                            как браузеры форматируют и отображают содержимое страницы.
+                            Будучи языком, он содержит кодовые слова и синтаксис, как и любой другой язык.</p>
+                        <p>С момента первого своего релиза в 1991 году HTML претерпел множество обновлений. HTML5 был
+                            выпущен в 2014 году. В него были добавлены такие функции, как поддержка оффлайн хранилищ
+                            мультимедийных данных, более точные элементы контента (например, хедер, футер, навигация) и
+                            поддержка встраивания аудио и видео.</p>
+
+                        <hr style="color: black;height:15px;">
+                        <p>
+                            CSS («каскадные таблицы стилей», от англ. Cascading Style Sheets) — это язык, используемый
+                            для стилизации страниц. Он определяет то, как HTML-элементы будут выглядеть на веб-странице
+                            с точки зрения дизайна, макета на разных устройствах с разными размерами экрана. CSS
+                            управляет макетом множества различных веб-страниц одновременно.
+                        </p>
+                        <p> Как это работает. CSS взаимодействует с HTML-элементами, компонентами веб-страницы.
+                            Для взаимодействия с HTML в CSS используются селекторы. Селектор — это часть CSS-кода,
+                            определяющая, на какую часть HTML будут воздействовать стили CSS.
+                            Объявление содержит свойства и значения, используемые селектором.
+                            Свойства определяют размер шрифта, цвет и отступы. Каждое свойство имеет значение или набор
+                            значений.</p>
+                        <p>
+                            CSS-фреймворк — это набор дефолтных CSS- и HTML-файлов, который расширяет возможности по
+                            части дизайна. Помимо их пользы при создании адаптивного дизайна, CSS-фреймворки помогают
+                            создавать различные макеты, что избавляет разработчиков от необходимости писать код с нуля в
+                            каждом случае. Обычно они заметно помогают при разработке веб-приложений под разные
+                            платформы и размеры экрана. Благодаря общим компонентам пользовательского интерфейса, Grid
+                            Layout и многим другим функциям, CSS-фреймворки значительно ускоряют рабочий процесс
+                            разработки. Существуют разные виды фреймворков:Полнофункциональные (Bootstrap, Foundation,
+                            Semantic UI и др.), Ориентированные на материальный дизайн: (Materialize and Material Design
+                            Lite), Легкие (Pure).
+                        </p>
+                        <hr style="color: black;height:15px;">
+                        <p>Написание CSS является рутиной, и мелкие задачи, такие как: поиск значений цвета, закрытие
+                            тегов или любые другие повторяющиеся операции, отнимают много времени. Вот где пригождается
+                            препроцессор. CSS-препроцессор представляет собой скриптовый язык и расширяет возможности
+                            CSS.</p>
+                        <p>Sass расшифровывается как Syntactically Awesome Style Sheets («синтаксически превосходные
+                            таблицы стилей»). Sass работает на Ruby и обрабатывается на стороне сервера. Поскольку корни
+                            его происхождения восходят к языку Ruby, установка осуществляется через так называемые gem-ы
+                            (несколько библиотек Ruby/Rails).</p>
+                        <p>LESS расшифровывается как Leaner Style Sheets («компактная таблица стилей»). На данный момент
+                            его можно назвать скорее JavaScript-библиотекой, которая обрабатывается на стороне клиента в
+                            браузере. Разработчики гораздо чаще выбирают LESS при использовании JavaScript с таблицами
+                            стилей. Эта технология позволяет использовать фрагменты CSS-кода в файлах LESS повторно.</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 text-center">
+                    <video src="source/video/video4/1476226_People_Technology_1280x720.mp4" type="video/mov"
+                        style="width: 500px;height:300px;text-align:center" autoplay muted loop></video>
+                    <div class="video-text">
+                        <h1 id="blink7" style="text-align: center;"><i>Frontend</i></h1>
+                    </div>
+                    <img src="source/images/images1/work/html44.png" style="width: 500px;height:400px;text-align:center"
+                        alt="">
+                    <p>Самые популярные CSS-фреймворки</p>
+                    <img src="source/images/images1/work/www2223.png"
+                        style="width: 500px;height:150px;text-align:center" alt="">
+                    <p>где P (абзац) — это селектор, { font-size:24px; color:blue; } — это объявление, font-size: и
+                        color: — свойства, а 24px; и blue; — значения.</p>
+                    <img src="source/images/images1/work/1122dsfe.png"
+                        style="width: 500px;height:150px;text-align:center" alt="">
+                    <p>Парный тег html> / /html> определяет границы веб-страницы, а текст между тегами body> / /body>
+                        определяет видимое содержимое страницы.
+                        !DOCTYPE html в самом начале объявляет тип документа для HTML5. Если его не обозначить, разные
+                        браузеры будут отображать его по-своему.</p>
+
+                    <img src="source/images/images1/work/fr111.png" style="width: 500px;height:150px;text-align:center"
+                        alt="">
+                    <p>Фронтэнд-разработчики красят лампу в жёлтый цвет и втирают бэкенду, что лампочка работает, но
+                        только в дневное время.</p>
+                    <video src="source/images/foto-people/1107894.mp4" type="video/mov"
+                        style="width: 500px;height:300px;text-align:center" autoplay muted loop></video>
+
+                </div>
+
+                <hr style="color: black;height:15px;">
+                <div class="col-lg-6 col-md-12 text-center mt-4">
+                    <div class="row">
+                        <p style="color: brown;font-style:italic;font-size:30px;text-decoration:underline"> Статьи:</p>
+                        <ol>
+                            <li><a href="#">Backend</a> </li>
+                            <li> <a href="#">За что отвечает бэкенд-разработчик:</a> </li>
+                            <li><a href="#">Где нужен?</a></li>
+                            <ol>
+                                <li><a href="#">Средняя заработная плата</a></li>
+                                <li><a href="#">Базовые требования к профессионалу</a></li>
+                            </ol>
+                            </li>
+                            <li><a href="#">Важные личные качества</a></li>
+                            <li><a href="#">Лучшие книги и средства обучения</a></li>
+                        </ol>
+                        <hr style="color: black;height:15px;">
+                        <h2 style="color: blueviolet;text-decoration:underline">О Backend - разработке</h2>
+                        <p>бэкенд-разработчик — это программист, который отвечает за внутреннюю и вычислительную логику
+                            веб-сайта или веб-приложения, а также иного программного обеспечения и информационных
+                            систем.
+                            Строго
+                            говоря, бэкенд бывает не только у веб-решений, он есть и у десктопа, и у мобильных
+                            приложений,
+                            т.к.
+                            по сути бэкенд — это всё, что относится к программно-аппаратной части сервиса. Но
+                            исторически
+                            так
+                            сложилось, что бэкенд и фронтенд начали особенно явно выделять именно в веб-разработке. А
+                            поскольку
+                            это ещё и самая популярная на данный момент сфера, то и мы будем говорить именно о вебе (для
+                            десктопа многие тезисы тоже будут справедливы, а про мобильных разработчиков мы с вами
+                            поговорим
+                            в
+                            одном из выпусков отдельно).</p>
+                        <hr style="color: black;height:15px;">
+                        <p>Бэкенд-разработчик создаёт компоненты и функции, которые доступны пользователю приложения или
+                            сайта
+                            через интерфейс. Проще говоря, бэкендеры — это программисты, которые разрабатывают всё то,
+                            что
+                            не
+                            видит и напрямую не трогает пользователь. То есть красивая форма ввода данных или корзина
+                            интернет-магазина — это фронтенд, а хранение данных в СУБД, связка полей формы регистрации и
+                            корзины, интеграция с платёжным шлюзом, автоматические письма, подгрузка и обновление
+                            контента —
+                            это
+                            всё бэкенд. Поэтому, если форма регистрации стала отдавать ошибку базы, виноват… тестировщик
+
+                            (почему— мы тоже расскажем в очередной серии).</p>
+                        <hr style="color: black;height:15px;">
+                        <p>бэкенд-разработчик отвечает за: </p>
+                        <ol>
+                            <li style="color: #20e9fe;">обеспечение корректной работы всех функций сайта и его
+                                вычислительной логики;</li>
+                            <li style="color: #20e9fe;">организация и работа с базами данных посредством СУБД;</li>
+                            <li style="color: #20e9fe;">разработка базовой логики и алгоритмов работы приложения;</li>
+                            <li style="color: #20e9fe;">API;</li>
+                            <li style="color: #20e9fe;">необходимые интеграции с внешними сервисами;</li>
+                            <li style="color: #20e9fe;">тестирование и отладка приложения и отдельных компонентов.</li>
+                        </ol>
+
+                        <p>Как и в случае с фронтенд-разработкой, абсолютно везде, где есть сайт или приложение, которое
+                            в
+                            вебе взаимодействует с пользователем. Другое дело, что всем нужны бэкендеры разного уровня:
+                            в
+                            офисе условной социальной сети или крупного сайта объявлений бэкенд-разработчик обязан не
+                            просто
+                            иметь базовые навыки, но и работать с высокими нагрузками, микросервисной архитектурой и
+                            контейнеризацией (Docker, Kubernetes), знать системы мониторинга (типа Zabbix, Grafana),
+                            иметь
+                            навыки Scrum (опционально для конкретных компаний). А для небольшого интернет-магазина
+                            вполне
+                            достаточно связки PHP-Ajax-нужная СУБД-немного HTML, иногда и того меньше. Понятно, что и
+                            оплата
+                            труда, и требования к опыту также совершенно разные. </p>
+                        <hr style="color: black;height:15px;">
+                        <p>Заработную плата от 55000 до 250000 и выше</p>
+                        <hr style="color: black;height:15px;">
+                        <p>Требования к бэкендеру ещё более чувствительны к особенностям компании и её бизнес-процессам,
+                            чем
+                            у фронтендера. Иногда это могут быть весьма странные на первый взгляд вещи такие как
+                            «понимание
+                            принципов работы рыбного холодильника как предприятия», «знание основ продаж или опыт в
+                            продажах», «блестящее знание JavaScript, CSS и HTML». Но это выглядит безумно и отталкивающе
+                            только при первом подходе. На самом деле, бэкенд-разработчик действительно больше погружён в
+                            бизнес-процессы, должен не только разрабатывать код в соответствие с ними, но и подстраивать
+                            какие-то вещи под конкретные задачи, понимать, как оно работает изнутри. Если вы никогда не
+                            видели воронку продаж и не понимаете, чё это за фигня, вы никогда не сможете разработать её
+                            логику вместе с фильтрами, срезами и переходами (даже если у вас будет отличное ТЗ,
+                            разобраться
+                            сложно). Ну а в примере с «блестящее знание JavaScript, CSS и HTML» всё просто: вероятно,
+                            руководитель не очень-то доверяет своему другому разработчику и готов пересмотреть подход к
+                            разработке. Такое нередко случается в небольших компаниях. </p>
+                        <hr style="color: black;height:15px;">
+                        <p>Требования:Знание хотя бы одного «серверного» языка программирования: PHP, Go, ASP.NET,
+                            C/C++,
+                            Python, Ruby, Java. В некоторых случаях достаточно знания JavaScript для бэкенда (Node.js),
+                            Знание API , Понимание принципов работы серверов Apache, NGINX, IIS и проч., Навыки
+                            написания
+                            юнит-тестов и покрытия кода тестами, Навыки написания запросов к БД и проектирования баз
+                            данных,
+                            Администрирование UNIX, Знание принципов работы HTTP
+                        </p>
+                        <hr style="color: black;height:15px;">
+                        <p>Бэкендеру хорошо, он может быть интровертом. Его зона работы с пользователями сведена до
+                            минимума, в основном, все рабочие контакты с менеджерами или коллегами. Эти ребята нередко
+                            работают по ТЗ и делают всё так, как это прописано в документе либо так, чтобы получить
+                            состояние, максимально близкое к целевому (ТЗ, знаете ли, тоже бывают несовершенны, а то и
+                            совершенно не…).
+
+                            Однако есть набор качеств, без которых о направлении бэкенда думать не стоит. Они вам могут
+                            показаться чем-то вроде качеств сотрудника, который нужен «молодой динамически развивающейся
+                            команде», но нет, речь именно о внутренних императивах, которые помогут не просто хорошо
+                            выполнять работу, но и делать это с внутренним комфортом (а не на «отвяжись»).</p>
+                        <p>Ответственность. Действительно, на бэкендере лежит ответственность буквально за всё: чтобы
+                            данные
+                            сохранились, чтобы реляционные таблицы работали как надо, чтобы временные пояса учитывались,
+                            чтобы сайт был шустрым и т.д. И если кривая навигация от фронтендера приведёт к паре злобных
+                            вскриков пользователей, то ошибка бэкендера может стоить очень дорого — в прямом смысле
+                            (например, если бизнес-данные по какой-то причине перестанут сохраняться или не сработает
+                            разделение прав доступа в какой-нибудь CRM-системе).</p>
+                        <p>Внимательность и внимание к мелочам. Опять же, мелочей в бэкенде не бывает, поэтому
+                            необходимо
+                            тщательно проектировать связность работы всех компонент и не упустить ничего.</p>
+                        <p>Навыки планирования и исполнения плана. Бэкенд любого проекта — это сборник разноплановых
+                            задач.
+                            И если вы единственный бэкендер проекта или у вас с коллегами слабо реализовано разделение
+                            труда, только планирование и спасёт от авралов, факапов и срыва дедлайнов. Жёсткое к себе и
+                            времени планирование — залог спокойной работы практически без переработок (которые у
+                            бэкендеров
+                            случаются чаще остальных).</p>
+                        <hr style="color: black;height:15px;">
+                        <p>Для любого программиста крайне желателен английский язык не ниже upper-intermediate с уклоном
+                            в
+                            технический английский. Так вы сможете читать в оригинале многочисленные рекомендации Google
+                            и
+                            других компаний для оптимальной разработки (очень много полезной документации!),
+                            самообучаться с
+                            помощью зарубежных лекций, общаться с коллегами на форумах, задавать вопросы, а также читать
+                            книги по юзабилити и дизайну, среди которых очень много крутых англоязычных и пока не
+                            переведённых изданий. </p>
+                        <hr style="color: black;height:15px;">
+                        <p>Базовая книга по вашему языку программирования — мне нравятся издания O’Reilly, многие
+                            переведены
+                            издательством «Питер». </p>
+                        <p>Джоэл Х. Спольски — можно читать его блог, можно ещё на просторах Рунета найти электронную
+                            книгу
+                            «Джоэл о программировании» — сборник постов из блога на русском.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 text-center">
+                    <video src="source/video/video4/1476230_People_Technology_1280x720.mp4" type="video/mov"
+                        style="width: 500px;height:300px;text-align:center" autoplay muted loop></video>
+                    <div class="video-text">
+                        <h1 id="blink7" style="text-align: center;"><i>Backend</i></h1>
+                    </div>
+                    <img src="source/images/images1/work/b222222333.png"
+                        style="width: 500px;height:400px;text-align:center" alt="">
+                    <p>Вперёд, к вершинам бэкенда. </p>
+                    <img src="source/images/images1/work/b23333.jpg" style="width: 500px;height:150px;text-align:center"
+                        alt="">
+                    <p>Бэкенд это всегда немного боль</p>
+                    <img src="source/images/images1/work/b33333.png" style="width: 500px;height:150px;text-align:center"
+                        alt="">
+                    <p>Совместная работа бэкенд и фронтенл разработчика</p>
+
+                    <img src="source/images/images1/work/b454355.png"
+                        style="width: 500px;height:150px;text-align:center" alt="">
+                    <p>Миф:Бэкенд — это очень сложно</p>
+                    <img src="source/images/images1/work/fr111.png" style="width: 500px;height:150px;text-align:center"
+                        alt="">
+                    <p>Бэкенд-разработчики удивляются, откуда у всех взялись проблемы с этими лампочками, вспоминает,
+                        что забыл задеплоить свет в базу данных, успокаивается и валит вину на фронтэнд.</p>
+                    <video src="source/video/video4/6994107_Generative Ai_Computer Hacker_1280x720.mp4" type="video/mov"
+                        style="width: 500px;height:300px;text-align:center" autoplay muted loop></video>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <footer class="mt-4">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 footer-t text-left">
+                    <p>Все права защишены</p>
+                    <div class="look-calendar">
+                        <table id="calendar">
+                            <thead>
+                                <tr>
+                                    <td><b>‹</b>
+                                    <td colspan="5">
+                                    <td><b>›</b>
+                                <tr class="dn">
+                                    <td>Пн
+                                    <td>Вт
+                                    <td>Ср
+                                    <td>Чт
+                                    <td>Пт
+                                    <td>Сб
+                                    <td>Вс
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-t text-center">
+                    <p><a href="contacts.html">Контакты</a><br><a href="work.html">Работа</a><br><a
+                            href="our-team.html">Наша команда</a><br><a href="news.html">новости</a><br><a
+                            href="work.html">работа в студии</a><br><a href="vacansy.html">вакансии</a><br><a
+                            href="pricing.html">покупки</a></p>
+
+
+                    <table cellpadding=0 cellspacing=0 width=250
+                        style="border:solid 1px #2062fe;font-family:Verdana;font-size:8px;background-color:#20e9fe;margin:auto auto">
+                        <tr>
+                            <td>
+                                <table width=100% cellpadding=0 cellspacing=0>
+                                    <tr>
+                                        <td width=8 height=20 background="https://rp5.ru/informer/htmlinfa/topshl.png"
+                                            bgcolor=#2062fe>
+                                        </td>
+                                        <td width=100px align=center
+                                            background="https://rp5.ru/informer/htmlinfa/topsh.png" bgcolor=#2062fe><a
+                                                style="color:#ffffff; font-family:Verdana;font-size: 12px;"
+                                                href="https://rp5.ru/6290/ru"><b>Омск</b></a></td>
+                                        <td width=8 height=30 background="https://rp5.ru/informer/htmlinfa/topshr.png"
+                                            bgcolor=#2062fe> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign=top style="padding:0;"><iframe
+                                    src="https://rp5.ru/htmla.php?id=6290&lang=ru&um=00000&bg=%2320e9fe&ft=%23ffffff&fc=%232062fe&c=%23021207&f=Verdana&s=12&sc=3"
+                                    width=100% height=207 frameborder=0 scrolling=no style="margin:0;"></iframe></td>
+                        </tr>
+                    </table>
+
+                    <!-- код счетчик просмотров -->
+                    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+                    <script>
+                        // Ваша конфигурация Firebase
+                        var firebaseConfig = {
+                            apiKey: "your-api-key",
+                            authDomain: "your-auth-domain",
+                            databaseURL: "your-database-url",
+                            projectId: "your-project-id",
+                            storageBucket: "your-storage-bucket",
+                            messagingSenderId: "your-messaging-sender-id"
+                        };
+                        firebase.initializeApp(firebaseConfig);
+
+                        var page = window.location.href;
+                        var pageViewsRef = firebase.database().ref('page_views/' + btoa(page));
+
+                        pageViewsRef.transaction(function (views) {
+                            return views + 1;
+                        });
+
+                        pageViewsRef.on('value', function (snapshot) {
+                            document.getElementById('page-views').innerText = 'Просмотров: ' + snapshot.val();
+                        });
+                    </script>
+                    <div id="page-views">Просмотров сайта: 0</div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 media-links">
+
+                    <a href="https://telegram.org/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                            src="source/files/tg.png" alt="111"></a>
+                    <a href="https://www.youtube.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                            src="source/files/yt.png" alt="222"></a>
+                    <a href="instagram.com"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                            src="source/images/icons8-instagram-48.png" alt="111"></a>
+                    <a href="https://vk.com"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                            src="source/images/icons8-vk-48.png" alt="222"></a>
+                    <a href="https://web.whatsapp.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                            src="source/images/icons8-whatsapp-48.png" alt="111"></a>
+                    <a href="https://github.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                            src="source/images/proekt/icons8-github-50.png" alt="111"></a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 text-center ">
+            <p><a href="#">Хочешь узнать больше о разработке на компьютере .Заходи на сайт в скором времени будет
+                    обновление контента.</a> </p>
+        </div>
+        <marquee onmouseout="this.start()" onmouseover="this.stop()"><span style="color: red;"><b>Мы занимаемся
+                    поставкой компьютеров, компьютерного оборудования. Разработкой сайтов для магазина/компании.
+                    Обращайтесь к нам!!!💻🖥️</b></span></marquee>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script>
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+
+    <script>
+        function calendar(id, year, month) {
+            var Dlast = new Date(year, month + 1, 0).getDate(),
+                D = new Date(year, month, Dlast),
+                DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
+                DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
+                calendar = '<tr>',
+                month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+            if (DNfirst != 0) {
+                for (var i = 1; i < DNfirst; i++) calendar += '<td>';
+            } else {
+                for (var i = 0; i < 6; i++) calendar += '<td>';
+            }
+            for (var i = 1; i <= Dlast; i++) {
+                if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+                    calendar += '<td class="today">' + i;
+                } else {
+                    calendar += '<td>' + i;
+                }
+                if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
+                    calendar += '<tr>';
+                }
+            }
+            for (var i = DNlast; i < 7; i++) calendar += '<td> ';
+            document.querySelector('#' + id + ' tbody').innerHTML = calendar;
+            document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D.getFullYear();
+            document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
+            document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
+            if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) {
+                // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+                document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
+            }
+        }
+        calendar("calendar", new Date().getFullYear(), new Date().getMonth());
+        // переключатель минус месяц
+        document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function () {
+            calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
+        }
+        // переключатель плюс месяц
+        document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function () {
+            calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
+        }
+    </script>
+
+    <script type="text/javascript">
+        var lastResFind = ""; // последний удачный результат
+        var copy_page = ""; // копия страницы в ихсодном виде
+        function TrimStr(s) {
+          s = s.replace(/^\s+/g, '');
+          return s.replace(/\s+$/g, '');
+        }
+        function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+          var obj = window.document.getElementById(inputId);
+          var textToFind;
+    
+          if (obj) {
+            textToFind = TrimStr(obj.value);//обрезаем пробелы
+          } else {
+            alert("Введенная фраза не найдена");
+            return;
+          }
+          if (textToFind == "") {
+            alert("Вы ничего не ввели");
+            return;
+          }
+    
+          if (document.body.innerHTML.indexOf(textToFind) == "-1")
+            alert("Ничего не найдено, проверьте правильность ввода!");
+    
+          if (copy_page.length > 0)
+            document.body.innerHTML = copy_page;
+          else copy_page = document.body.innerHTML;
+    
+    
+          document.body.innerHTML = document.body.innerHTML.replace(eval("/name=" + lastResFind + "/gi"), " ");//стираем предыдущие якори для скрола
+          document.body.innerHTML = document.body.innerHTML.replace(eval("/" + textToFind + "/gi"), "<a name=" + textToFind + " style='background:red'>" + textToFind + "</a>"); //Заменяем найденный текст ссылками с якорем;
+          lastResFind = textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+          window.location = '#' + textToFind;//перемещаем скрол к последнему найденному совпадению
+        }
+      </script>
+</body>
+
+</html>

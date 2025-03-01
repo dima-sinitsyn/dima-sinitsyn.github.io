@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <link rel="stylesheet" href="source/styles/bgvideo.css">
+    <link rel="stylesheet" href="source/styles/image.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon-16x16.png">
+    <link rel="manifest" href="source/files/site.webmanifest">
+
+    <title>Rob@t-главная страница</title>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><i><strong id="blink6">R@bot/studio</strong></i></a>
+                <span id="clock" class="clock"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="pricing.html">Покупки</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Работа/контакты
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="work.html">Работа в студии</a></li>
+                                <li><a class="dropdown-item" href="vacansy.html">Вакансии</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Контакты</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Культура/спорт
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sport.html">Спорт</a></li>
+                                <li><a class="dropdown-item" href="history-achievements.html">Разработчики/история
+                                        студии</a></li>
+                                <li><a class="dropdown-item" href="news.html">Новости
+                                        студии</a></li>
+                                <li><a class="dropdown-item" href="news1.html">Новости
+                                        студии (для мобильных телефонов)</a></li>
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="nav-link active" class="dropdown-item" href="something.html">Разное</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Пользователь
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="registration.html">Регистрация на сайте</a></li>
+                                <li><a class="dropdown-item" href="login.html">логин</a></li>
+                                <li><a class="dropdown-item" href="profile.html">профиль </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instagram.com"><img style="width: 30px; margin-inline: 5px; "
+                                    src="source/images/icons8-instagram-48.png" alt="111"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://vk.com"><img style="width: 30px; margin-inline: 5px;"
+                                    src="source/images/icons8-vk-48.png" alt="222">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://web.whatsapp.com/"><img
+                                    style="width: 30px; margin-inline: 5px;" src="source/images/icons8-whatsapp-48.png"
+                                    alt="222">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://telegram.org/"><img
+                                    style="width: 30px; margin-inline: 5px; " src="source/files/tg.png" alt="111"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/"><img
+                                    style="width: 30px; margin-inline: 5px;" src="source/files/yt.png" alt="222">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <form class="d-flex" role="search">
+            <!-- <input class="form-control me-2" id="key" name="key" type="search" placeholder="Поиск на сайте"
+                aria-label="Search">
+            <button id="btn" type="submit" class="btn btn-outline-success">Поиск</button> -->
+            <input class="form-control me-2"id="text-to-find"  type="Search" placeholder="Поиск на сайте" aria-label="Search" value="">
+            <button type="button" type="submit" class="btn btn-outline-success" onclick="javascript: FindOnPage('text-to-find'); return false;">Поиск</button> 
+        </form>
+        <div class="col-lg-4 col-md-12 media-links text-center">
+            <p style="font-style: italic;"><a href="#"> Торговые партнеры </a> </p>
+            <a href="https://www.mvideo.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                    src="source/images/proekt2/1562672636542.jpeg" alt="111"></a>
+            <a href="https://www.dns-shop.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                    src="source/images/proekt2/1643605893_8-papik-pro-p-dns-logotip-8-be54e2c0eaba18ef70c4b4b7bcc57d5a-1.png"
+                    alt="222"></a>
+            <a href="https://www.citilink.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                    src="source/images/proekt2/31440129-65bde909e8b93.jpg" alt="111"></a>
+        </div>
+        <div class="bgvideo">
+            <video src="source/video/1475270_People_Family_1280x720.mp4" type="video/mov" autoplay muted loop></video>
+            <div class="effect"></div>
+            <div class="video-text">
+                <h1 id="blink7"><i>R@bot</i></h1>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center my-4">
+                    <h1 class="some" style="font-style: italic">Ценности студии</h1>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="row">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img src="source/images/other/0a31c576-66e6-5d11-9963-2d8010eb3a7a.jpg"
+                                                    class='w-100' alt="1">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t">
+                                                <h3>Мы заботимся о детях</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 ">
+                                                <img src="source/images/other/25645313470756.jpg" class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы заботимся о детях инвалидах.Берем на попечение интернаты</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img src="source/images/other/445583648ce19f713b446149795afdf8.jpg"
+                                                    class='w-100' alt="3">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t">
+                                                <h3>Мы заботимся о парках</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 ">
+                                                <img src="source/images/other/fdfbec91-4a57-5a95-8d01-1de7e5042b16.jpg"
+                                                    class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы заботимся о скверах</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 ">
+                                                <img src="source/images/other/medium_TASS_6866094-1.jpg" class='w-100'
+                                                    alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы убираем мусор в парках</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <img src="source/images/other/parents-with-teenager-drinking-from-bottles.jpg"
+                                                    class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы за семейные ценности</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img src="source/images/other/portrait-happy-young-adult-good-mood-sitting-table-home-crossed-legs-happy-housewife-fondling-french-bulldog-with-pleasure-copy-space-family-concept.jpg"
+                                                    class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы заботимся о собаках</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 ">
+                                                <img src="source/images/other/pretty-woman-playing-with-siamese-cat.jpg"
+                                                    class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы заботимся о кошках</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <img src="source/images/other/scale_1200 (4).jpg" class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы знаем,что это наши верные друзья</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <img src="source/images/other/stunning-nature-landscape.jpg"
+                                                    class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы любим фотографировать природу</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <img src="source/images/other/two-stylish-girls-sunny-field-with-dogs.jpg"
+                                                    class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы встречаемся с коллегами из других компаний/студий</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 ">
+                                                <img src="source/images/other/uhod-za-invalidami.jpg" class='w-100'
+                                                    alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы помогаем инвалидам</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 ">
+                                                <img src="source/images/foto-people/foto-culture/family-reunion-celebrating-winter.jpg"
+                                                    class='w-100' alt="2">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-t ">
+                                                <h3>Мы организуем корпоративы </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="background:#ffffff; height:2px; width:100%">
+            <H5 class="cat" style="text-align: center;color:aliceblue;font-style:italic">Братья наши меньшие</H5>
+            <div class="col-lg-12 col-md-12 text-center my-8"></div>
+            <div class="bgvideo">
+                <video src="source/files2/my/my2/mixkit-a-white-cat-sits-in-front-of-a-white-wall-1535-hd-ready.mp4"
+                    type="video/mp4" autoplay muted loop></video>
+            </div>
+
+            <p style="font-style: italic;"><u>Кошки</u> — одни из самых популярных домашних животных по всему миру. Их
+                древняя история и уникальные
+                качества привлекают внимание людей на протяжении многих веков. Кошки имеют особую привлекательность,
+                которая заставляет нас удивляться и восхищаться ими. В этой статье мы рассмотрим несколько удивительных
+                фактов о кошках.
+
+                Одно из самых привлекательных качеств кошек — их загадочность и независимость. Кошки всегда были
+                символом
+                таинственности и интриги. Их тонкие и грациозные движения, острый зрительный ареал и великолепные
+                охотничьи навыки делают их поистине феерическими созданиями. Кошки умеют прятаться и непринужденно
+                приспосабливаться к окружающей среде, что позволяет им оставаться в независимых существах и в то же
+                время
+                быть частью нашей жизни.</p>
+
+            <ul>
+                <li><a href="https://ya.ru/images/search?text=Красивые%20Собаки&nl=1&source=morda">Кошки:</a></li>
+                <ul>
+                    <li><a
+                            href="https://yandex.ru/images/search?text=Сиамская%20кошка%20Манчкин&source=related-duck">Сиамская:манчкин</a>
+                    </li>
+                    <li><a href="https://yandex.ru/images/search?text=Синеглазый%20Коби&source=related-duck">Синеглазый
+                            Коби</a>
+                    </li>
+                    <li><a href="https://yandex.ru/images/search?text=Циннамон%20британец&source=related-duck">Британская:
+                            циннамон</a>
+                    </li>
+                    <li><a href="https://yandex.ru/images/search?text=Сомалийская%20кошка%20рыжая&source=related-duck">Сомалийская
+                            длинношерстная</a>
+                </ul>
+                </li>
+
+            </ul>
+
+            <div class="bgvideo">
+                <video src="source/files2/my/my2/mixkit-siamese-cat-inside-a-hat-4103-hd-ready.mp4" type="video/mp4"
+                    autoplay muted loop></video>
+            </div>
+
+            <p style="font-style:italic"><u>Собаки</u> дарят нам столько радости, верности и преданности, поэтому
+                неудивительно, что они занимают такое
+                особое место в наших сердцах. Надеемся, что эти интересные факты помогли вам лучше понять насколько
+                уникальны и интеллектуально развиты эти существа. Давайте ценить каждый момент, проведенный вместе со
+                своими четвероногими друзьями, и беречь их, как самое драгоценное сокровище.</p>
+            <ul>
+                <li><a href="https://ya.ru/images/search?text=Красивые%20Собаки&nl=1&source=morda">Собаки:</a></li>
+                <ul>
+                    <li><a href="https://avatars.mds.yandex.net/get-entity_search/41311/953576345/S600xU_2x">Бигль</a>
+                    </li>
+                    <li><a href="https://avatars.mds.yandex.net/get-entity_search/2304191/981595576/S600xU_2x">Дог</a>
+                    </li>
+                    <li><a
+                            href="https://avatars.mds.yandex.net/get-entity_search/41311/727070655/S600xU_2x">Лабрадор</a>
+                    </li>
+                    <li><a href="https://avatars.mds.yandex.net/get-entity_search/46786/784844795/S600xU_2x">Овчарка</a>
+                </ul>
+                </li>
+
+            </ul>
+
+            <div class="bgvideo">
+                <video src="source/files2/my/my2/mixkit-dachshund-dog-while-hands-caress-it-10361-hd-ready.mp4"
+                    type="video/mp4" autoplay muted loop></video>
+            </div>
+
+    </section>
+
+    <footer>
+        <div class="container-fluid"></div>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 footer-t text-center">
+                <p>Все права защишены</p>
+                <div class="look-calendar">
+                    <table id="calendar">
+                        <thead>
+                            <tr>
+                                <td><b>‹</b>
+                                <td colspan="5">
+                                <td><b>›</b>
+                            <tr class="dn">
+                                <td>Пн
+                                <td>Вт
+                                <td>Ср
+                                <td>Чт
+                                <td>Пт
+                                <td>Сб
+                                <td>Вс
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 footer-t text-center">
+                <p><a href="contacts.html">Контакты</a><br><a href="work.html">Работа</a><br><a
+                        href="our-team.html">Наша команда</a><br><a href="news.html">новости</a><br><a
+                        href="work.html">работа в студии</a><br><a href="vacansy.html">вакансии</a><br><a
+                        href="pricing.html">покупки</a></p>
+                <table cellpadding=0 cellspacing=0 width=250
+                    style="border:solid 1px #2062fe;font-family:Verdana;font-size:8px;background-color:#20e9fe;margin:auto auto">
+                    <tr>
+                        <td>
+                            <table width=100% cellpadding=0 cellspacing=0>
+                                <tr>
+                                    <td width=8 height=20 background="https://rp5.ru/informer/htmlinfa/topshl.png"
+                                        bgcolor=#2062fe>
+                                    </td>
+                                    <td width=100px align=center background="https://rp5.ru/informer/htmlinfa/topsh.png"
+                                        bgcolor=#2062fe><a style="color:#ffffff; font-family:Verdana;font-size: 12px;"
+                                            href="https://rp5.ru/6290/ru"><b>Омск</b></a></td>
+                                    <td width=8 height=30 background="https://rp5.ru/informer/htmlinfa/topshr.png"
+                                        bgcolor=#2062fe> 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign=top style="padding:0;"><iframe
+                                src="https://rp5.ru/htmla.php?id=6290&lang=ru&um=00000&bg=%2320e9fe&ft=%23ffffff&fc=%232062fe&c=%23021207&f=Verdana&s=12&sc=3"
+                                width=100% height=207 frameborder=0 scrolling=no style="margin:0;"></iframe></td>
+                    </tr>
+                </table>
+
+                <!-- код счетчик просмотров -->
+                <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+                <script>
+                    // Ваша конфигурация Firebase
+                    var firebaseConfig = {
+                        apiKey: "your-api-key",
+                        authDomain: "your-auth-domain",
+                        databaseURL: "your-database-url",
+                        projectId: "your-project-id",
+                        storageBucket: "your-storage-bucket",
+                        messagingSenderId: "your-messaging-sender-id"
+                    };
+                    firebase.initializeApp(firebaseConfig);
+
+                    var page = window.location.href;
+                    var pageViewsRef = firebase.database().ref('page_views/' + btoa(page));
+
+                    pageViewsRef.transaction(function (views) {
+                        return views + 1;
+                    });
+
+                    pageViewsRef.on('value', function (snapshot) {
+                        document.getElementById('page-views').innerText = 'Просмотров: ' + snapshot.val();
+                    });
+                </script>
+                <div id="page-views">Просмотров сайта: 0</div>
+
+            </div>
+            <div class="col-lg-4 col-md-12 media-links">
+
+                <a href="https://telegram.org/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                        src="source/files/tg.png" alt="111"></a>
+                <a href="https://www.youtube.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                        src="source/files/yt.png" alt="222"></a>
+                <a href="instagram.com"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                        src="source/images/icons8-instagram-48.png" alt="111"></a>
+                <a href="https://vk.com"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                        src="source/images/icons8-vk-48.png" alt="222"></a>
+                <a href="https://web.whatsapp.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                        src="source/images/icons8-whatsapp-48.png" alt="111"></a>
+                <a href="https://github.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+                        src="source/images/proekt/icons8-github-50.png" alt="111"></a>
+
+
+            </div>
+
+        </div>
+        </div>
+        <marquee onmouseout="this.start()" onmouseover="this.stop()"><span style="color: red;"><b>Мы занимаемся
+                    поставкой компьютеров, компьютерного оборудования. Разработкой сайтов для магазина/компании.
+                    Обращайтесь к нам!!!💻🖥️</b></span></marquee>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script>
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+    <script>
+        function calendar(id, year, month) {
+            var Dlast = new Date(year, month + 1, 0).getDate(),
+                D = new Date(year, month, Dlast),
+                DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
+                DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
+                calendar = '<tr>',
+                month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+            if (DNfirst != 0) {
+                for (var i = 1; i < DNfirst; i++) calendar += '<td>';
+            } else {
+                for (var i = 0; i < 6; i++) calendar += '<td>';
+            }
+            for (var i = 1; i <= Dlast; i++) {
+                if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+                    calendar += '<td class="today">' + i;
+                } else {
+                    calendar += '<td>' + i;
+                }
+                if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
+                    calendar += '<tr>';
+                }
+            }
+            for (var i = DNlast; i < 7; i++) calendar += '<td> ';
+            document.querySelector('#' + id + ' tbody').innerHTML = calendar;
+            document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D.getFullYear();
+            document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
+            document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
+            if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) {
+                // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+                document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
+            }
+        }
+        calendar("calendar", new Date().getFullYear(), new Date().getMonth());
+        // переключатель минус месяц
+        document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function () {
+            calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
+        }
+        // переключатель плюс месяц
+        document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function () {
+            calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
+        }
+    </script>
+
+    <script type="text/javascript">
+        var lastResFind = ""; // последний удачный результат
+        var copy_page = ""; // копия страницы в ихсодном виде
+        function TrimStr(s) {
+          s = s.replace(/^\s+/g, '');
+          return s.replace(/\s+$/g, '');
+        }
+        function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+          var obj = window.document.getElementById(inputId);
+          var textToFind;
+    
+          if (obj) {
+            textToFind = TrimStr(obj.value);//обрезаем пробелы
+          } else {
+            alert("Введенная фраза не найдена");
+            return;
+          }
+          if (textToFind == "") {
+            alert("Вы ничего не ввели");
+            return;
+          }
+    
+          if (document.body.innerHTML.indexOf(textToFind) == "-1")
+            alert("Ничего не найдено, проверьте правильность ввода!");
+    
+          if (copy_page.length > 0)
+            document.body.innerHTML = copy_page;
+          else copy_page = document.body.innerHTML;
+    
+    
+          document.body.innerHTML = document.body.innerHTML.replace(eval("/name=" + lastResFind + "/gi"), " ");//стираем предыдущие якори для скрола
+          document.body.innerHTML = document.body.innerHTML.replace(eval("/" + textToFind + "/gi"), "<a name=" + textToFind + " style='background:red'>" + textToFind + "</a>"); //Заменяем найденный текст ссылками с якорем;
+          lastResFind = textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+          window.location = '#' + textToFind;//перемещаем скрол к последнему найденному совпадению
+        }
+      </script>
+
+</body>
+
+</html>

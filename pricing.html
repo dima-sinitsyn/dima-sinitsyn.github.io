@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/styles/mycss.css">
+  <link rel="stylesheet" href="source/styles/bgvideo.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="source/files/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon-16x16.png">
+  <link rel="manifest" href="source/files2/site.webmanifest">
+  <title>Rob@t - покупки</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-blue">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><i><strong id="blink6">R@bot/studio</strong></i></a>
+        <span id="clock" class="clock">
+        </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pricing.html">Покупки</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Работа/контакты
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="work.html">Работа в студии</a></li>
+                <li><a class="dropdown-item" href="vacansy.html">Вакансии</a></li>
+                <li><a class="dropdown-item" href="contacts.html">Контакты</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Культура/спорт
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sport.html">Спорт</a></li>
+                <li><a class="dropdown-item" href="history-achievements.html">Разработчики/история
+                    студии</a></li>
+                <li><a class="dropdown-item" href="news.html">Новости
+                    студии</a></li>
+                <li>
+                <li><a class="dropdown-item" href="news1.html">Новости
+                    студии (для мобильных телефонов)</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="something.html">Разное</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Пользователь
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="registration.html">Регистрация на сайте</a></li>
+                <li><a class="dropdown-item" href="login.html">логин</a></li>
+                <li><a class="dropdown-item" href="profile.html">профиль </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="instagram.com"><img style="width: 30px; margin-inline: 5px; "
+                  src="source/images/icons8-instagram-48.png" alt="111"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://vk.com"><img style="width: 30px; margin-inline: 5px;"
+                  src="source/images/icons8-vk-48.png" alt="222">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://web.whatsapp.com/"><img style="width: 30px; margin-inline: 5px;"
+                  src="source/images/icons8-whatsapp-48.png" alt="222">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://telegram.org/"><img style="width: 30px; margin-inline: 5px; "
+                  src="source/files/tg.png" alt="111"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/"><img style="width: 30px; margin-inline: 5px;"
+                  src="source/files/yt.png" alt="222">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <section>
+    <form class="d-flex" role="search">
+      <!-- <input class="form-control me-2" id="key" name="key" type="search" placeholder="Поиск на сайте" aria-label="Search">
+      <button id="btn" type="submit" class="btn btn-outline-success">Поиск</button> -->
+
+      <input class="form-control me-2"id="text-to-find"  type="Search" placeholder="Поиск на сайте" aria-label="Search" value="">
+      <button type="button" type="submit" class="btn btn-outline-success" onclick="javascript: FindOnPage('text-to-find'); return false;">Поиск</button> 
+    </form>
+    <div class="col-lg-4 col-md-12 media-links text-center">
+      <p style="font-style: italic;"><a href="#"> Торговые партнеры </a> </p>
+      <a href="https://www.mvideo.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+          src="source/images/proekt2/1562672636542.jpeg" alt="111"></a>
+      <a href="https://www.dns-shop.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+          src="source/images/proekt2/1643605893_8-papik-pro-p-dns-logotip-8-be54e2c0eaba18ef70c4b4b7bcc57d5a-1.png"
+          alt="222"></a>
+      <a href="https://www.citilink.ru/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+          src="source/images/proekt2/31440129-65bde909e8b93.jpg" alt="111"></a>       
+    </div>
+    <div class="col-lg-4 col-md-12 media-links text-center">
+      <p style="font-style: italic;margin:10px"><a href="#"> Наведи экран телефона>>></a></p>
+      <a href="http://qrcoder.ru" target="_blank"><img src="http://qrcoder.ru/code/?samsung.com&2&0" width="58"
+        height="58" border="0" title="QR код"></a>
+      <p>Компания партнер </p>
+
+    </div>
+
+
+
+
+
+    <div class="bgvideo">
+      <video src="source/video/video2/1111911_Credit-card_Using_1280x720.mp4" type="video/mov" autoplay muted
+        loop></video>
+      <div class="effect"></div>
+      <div class="video-text">
+        <h1 id="blink7"><i>R@bot</i></h1>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+
+        <div class="col-lg-8 col-md-12">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <a href="#"><img src="source/images/laptop.png" class="card-img-top" alt="Ноутбук"></a>
+                <div class="card-body">
+                  <h2 class="card-title"><a href="#">Ноутбуки</a></h2>
+                  <p class="card-text" style="text-decoration: none; font-style:italic;text-align:center">Ноутбук —
+                    переносной
+                    персональный компьютер, в корпусе которого
+                    объединены
+                    типичные
+                    компоненты ПК, включая дисплей, клавиатуру и устройство указания (обычно сенсорная панель или
+                    тачпад), а
+                    также аккумуляторные батареи.</p>
+                    <a href="#" class="btn btn-primary" type="submit" onclick="alert('Спасибо.Ваш товар добавлен в заказы и перенаправлен нашим партнерам на последующее его оформление.')"
+                    style="margin: 10px;">Заказать товар</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/gaming pc.png" class="card-img-top" alt="Игровой компьютер">
+                <div class="card-body">
+                  <h2 class="card-title"><a href="#">Игровой компьютер</a></h2>
+                  <p class="card-text" style="text-decoration: none; font-style:italic;text-align:center"> Игровой
+                    компьютер — это
+                    специальные модели, оснащённые соответствующими
+                    комплектующими
+                    для игр. Они имеют дополнительные возможности и лучшую эргономику по сравнению с обычной офисной
+                    техникой
+                  </p>
+                  <a href="#" class="btn btn-primary" type="submit" onclick="alert('Спасибо.Ваш товар добавлен в заказы и перенаправлен нашим партнерам на последующее его оформление.')"
+                    style="margin: 10px;">Заказать товар</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/gpu.png" class="card-img-top" alt="Видеокарта">
+                <div class="card-body">
+                  <h2 class="card-title">Видеокарта</h2>
+                  <p class="card-text" style="text-decoration: none; font-style:italic">Видеокарты Nvidia — это бренд
+                    графических процессоров, ориентированный на рынок
+                    высокопроизводительных устройств</p>
+                  <a href="#" class="btn btn-primary" type="submit" onclick="alert('Спасибо.Ваш товар добавлен в заказы и перенаправлен нашим партнерам на последующее его оформление.')"
+                    style="margin: 10px;">Заказать товар</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/controller.png" class="card-img-top" alt="Джойстик">
+                <div class="card-body">
+                  <h2 class="card-title">Джойстик</h2>
+                  <p class="card-text" style="text-decoration: none; font-style:italic">Геймпад — это контроллер для
+                    управления в видеоиграх, который чаще всего
+                    используется
+                    вместе с игровыми консолями. Устройство нужно удерживать двумя руками</p>
+                  <a href="#" class="btn btn-primary" type="submit" onclick="alert('Спасибо.Ваш товар добавлен в заказы и перенаправлен нашим партнерам на последующее его оформление.')"
+                    style="margin: 10px;">Заказать товар</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/acc.png" class="card-img-top" alt="Клавиатура">
+                <div class="card-body">
+                  <h2 class="card-title">Клавиатура</h2>
+                  <p class="card-text" style="text-decoration: none; font-style:italic">Клавиатура — это клавишное
+                    устройство, предназначенное для управления работой
+                    компьютера и ввода в него информации.</p>
+                  <a href="#" class="btn btn-primary" type="submit" onclick="alert('Спасибо.Ваш товар добавлен в заказы и перенаправлен нашим партнерам на последующее его оформление.')"
+                    style="margin: 10px;">Заказать товар</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/cpu.png" class="card-img-top" alt="Процессор">
+                <div class="card-body">
+                  <h2 class="card-title">Процессор</h2>
+                  <p class="card-text" style="text-decoration: none ; font-style:italic">Процессор — основное устройство
+                    компьютера, осуществляющее программируемую
+                    обработку
+                    данных и координацию работы его устройств</p>
+                  <a href="#" class="btn btn-primary" type="submit" onclick="alert('Спасибо.Ваш товар добавлен в заказы и перенаправлен нашим партнерам на последующее его оформление.')"
+                    style="margin: 10px;">Заказать товар</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 text-center mt-4">
+
+          </div>
+
+
+          <div class="col-lg-12 col-md-12 text-center my-4">
+            <p>Если вам нужны наши услуги:</p>
+            <p><a href="contacts.html">Обращайтесь к нам!!!</a></p>
+            <p>Если вам нужны наши товары:</p>
+            <p>Обращайтесь к нашим партнерам в
+              магазины:</p>
+            <p><a href="https://www.citilink.ru/"> <a href="https://www.citilink.ru/"
+                  style="color:orange;">Citilink!!!</a></a></p>
+            <p><a
+                href="https://www.dns-shop.ru/?ysclid=m78uk1ctji964392554&utm_medium=organic&utm_source=yandex&utm_referrer=https%3A%2F%2Fyandex.ru%2F"><a
+                  href="https://www.dns-shop.ru/?ysclid=m78uk1ctji964392554&utm_medium=organic&utm_source=yandex&utm_referrer=https%3A%2F%2Fyandex.ru%2F"
+                  style="color:orangered;">ДНС-shop!!!</a></a>
+            </p>
+            <p><a
+                href="https://www.mvideo.ru/promo/promocatalog?pid=yandexdirect_int&c=mg_image_name_p_sfo&af_siteid=search_none&af_c_id=81880939&af_adset_id=5420007142&af_ad_id=15951555757&af_ad=mвидео%20магазин&af_sub1=&af_sub2=1&is_retargeting=true&clickid=15754188654387134463&idfa=&google_aid=&android_id=&oaid=&af_reengagement_window=30d&af_force_deeplink=true&af_click_lookback=7d&utm_medium=cpc&utm_source=yandex&utm_campaign=cn:mg_image_name_p_sfo%7Ccid:81880939&utm_term=mвидео%20магазин&utm_content=ph:50914502056%7Cre:50914502056%7Ccid:81880939%7Cgid:5420007142%7Caid:15951555757%7Cadp:no%7Cpos:premium1%7Csrc:search_none%7Cdvc:desktop%7Ccoef_goal:0%7Cregion:66%7CОмск&yclid=15754188654387134463">
+                <a style="color: darkred;"
+                  href="https://www.mvideo.ru/promo/promocatalog?pid=yandexdirect_int&c=mg_image_name_p_sfo&af_siteid=search_none&af_c_id=81880939&af_adset_id=5420007142&af_ad_id=15951555757&af_ad=mвидео%20магазин&af_sub1=&af_sub2=1&is_retargeting=true&clickid=15754188654387134463&idfa=&google_aid=&android_id=&oaid=&af_reengagement_window=30d&af_force_deeplink=true&af_click_lookback=7d&utm_medium=cpc&utm_source=yandex&utm_campaign=cn:mg_image_name_p_sfo%7Ccid:81880939&utm_term=mвидео%20магазин&utm_content=ph:50914502056%7Cre:50914502056%7Ccid:81880939%7Cgid:5420007142%7Caid:15951555757%7Cadp:no%7Cpos:premium1%7Csrc:search_none%7Cdvc:desktop%7Ccoef_goal:0%7Cregion:66%7CОмск&yclid=15754188654387134463">М.ВИДЕО!!!</a></a>
+            </p>
+          </div>
+          <div class="col-lg-12 col-md-12 text-center ">
+            <img class="call-an" style="width: 40px; " src="source/images/phone.png" alt="///">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="row px-2">
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/141659dbcf8501b6ff4570126fcb8291/?r=plemwd">Материнская плата плата в
+                  компьютере,</a> на которой расположены ключевые электронные компоненты,
+                включая центральный процессор (ЦП), память (ОЗУ) и слоты расширения.<a
+                  href="https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/?ysclid=m78vpttbgc68545848">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/4f3eec96d2ca2eb4a41af022f2ce2779/?r=plemwd">VR (virtual reality)</a> —
+                это трёхмерная виртуальная реальность, искусственная среда, в которую
+                можно погрузиться, чтобы взаимодействовать с ней при помощи компьютера. Основа этой технологии
+                — 3D-изображение и иллюзия того, что пользователь попадает внутрь него. <a
+                  href="https://www.dns-shop.ru/catalog/846d3b4f73fb4e77/sistemy-vr/?ysclid=m78vowlkir319848791">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/b6adb447a2202dc59e17a14e7d577f89/?r=plemwd">Ноутбук</a> — переносной
+                компьютер, в корпусе
+                которого могут быть объединены
+                основные компоненты персонального компьютера (дисплей, клавиатуру, тачпад и аккумуляторные батареи) или
+                подключены дополнительно, такие как компьютерная мышь, монитор, внешние модули и интерфейсы, также
+                обладают небольшими размерами и весом, используются в основном в беспроводной сети интернет (Wi-Fi,
+                мобильный интернет), а также могут быть оснащены внешними док-станциями.<a
+                  href="https://www.citilink.ru/catalog/noutbuki/?utm_medium=cpc&utm_campaign=cities_stores-srch-cat-category_brand-notebooks&utm_source=yandex&utm_content=%7Cc:113434340%7Cg:5478392215%7Cb:16396357683%7Ck:52704231313%7Cst:search%7Ca:no%7Cs:none%7Ct:premium%7Cp:1%7Cr:52704231313%7Cdev:desktop%7Ccgci:10838788&utm_term=ноутбуки%20ситилинк&utm_param1=notebooks&yclid=16872787988509884415">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/f261eda45c40017a70854e86b24146cc/?r=plemwd">Компью́терная мышь</a> —
+                координатное устройство для управления курсором и отдачи различных команд
+                компьютеру. Управление курсором осуществляется путём перемещения мыши по поверхности стола или
+                специального коврика. Кнопки и колёсико мыши вызывают определённые действия, например: активация
+                указанного объекта, вызов контекстного меню, вертикальная и горизонтальная (в специализированных мышах)
+                прокрутка веб-страниц, окон операционной системы и электронных документов.<a
+                  href="https://dns-shop.by/ru/category/17a8a69116404e77/mysi/">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/832dead3b541040133dc71606bacf8d1/?r=plemwd">Компью́терная
+                  клавиату́ра</a> — устройство ввода. Представляет собой набор клавиш (кнопок), расположенных в
+                определённом порядке. Бывает совмещённой в одно устройство с тачпадом, тензометрическим джойстиком или
+                трекболом. Может быть как отдельным устройством, подключаемым к компьютеру или терминалу по интерфейсу
+                USB или PS/2, либо встроенной, например, в ноутбук. <a
+                  href="https://www.dns-shop.ru/catalog/17a8950d16404e77/klaviatury/?ysclid=m78vkzsslz65159352">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/0e3ef6c19bb5b7df60489e92e192acec/?r=plemwd">Микрофо́н</a> —
+                электроакустический прибор, преобразующий
+                звуковые колебания в электрический сигнал. <a href="https://www.citilink.ru/catalog/mikrofony/">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/d0bcc16df7b143ddea91a17a84504bfd/?r=plemwd">Персона́льный
+                  компью́тер</a>Персона́льный компью́тер, ПК, ПЭВМ (персональная
+                электронно-вычислительная машина) — однотерминальная однопользовательская, то есть предназначенная для
+                использования одним пользователем ЭВМ, имеющая эксплуатационные характеристики бытового прибора и
+                универсальные функциональные возможности. ПК может быть как стационарным (чаще всего настольным), так и
+                переносным (ноутбук, планшет).<a
+                  href="https://www.dns-shop.ru/catalog/17a8932c16404e77/personalnye-kompyutery/">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/4a38f7e6cc0c8b5e9b22a233f87d6820/?r=plemwd">Со́товый телефо́н</a>, или
+                моби́льный телефо́н, — телефон, предназначенный для работы в сетях сотовой
+                связи; использует приёмопередатчик радиодиапазона и традиционную телефонную коммутацию для осуществления
+                телефонной связи на территории зоны покрытия сотовой сети. <a
+                  href="https://www.dns-shop.ru/catalog/17a89fea16404e77/sotovye-telefony/">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/98d5bb331b3e9b21427b13701136ca3a/?r=plemwd">Нау́шники</a>, головны́е
+                телефо́ны — два телефона с оголовьем, предназначенные для подключения к
+                радиоэлектронным аппаратам. Наушники представляют собой пару небольших по размеру головных телефонов
+                или блока наушников, надеваемых на голову или вставляемых прямо в ушные каналы. <a
+                  href="https://www.mvideo.ru/naushniki-54/naushniki-3967">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p><a href="https://rutube.ru/video/e66086b823b6dd4ec53229b1b327503f/?r=plemwd">Джо́йстик</a> — устройство
+                ввода информации в персональный
+                компьютер, которое представляет собой качающуюся в двух плоскостях
+                вертикальную ручку. <a
+                  href="https://www.mvideo.ru/products/geimpad-thunderobot-g30-white-jt00fu000ru-400288349">Узнать
+                  больше о товаре>>></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   
+  </section>
+
+  <footer class="mt-4">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-12 footer-t text-left">
+          <p>Все права защишены</p>
+          <div class="look-calendar">
+            <table id="calendar">
+              <thead>
+                <tr>
+                  <td><b>‹</b>
+                  <td colspan="5">
+                  <td><b>›</b>
+                <tr class="dn">
+                  <td>Пн
+                  <td>Вт
+                  <td>Ср
+                  <td>Чт
+                  <td>Пт
+                  <td>Сб
+                  <td>Вс
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-t text-center">
+          <p><a href="contacts.html">Контакты</a><br><a href="work.html">Работа</a><br><a href="our-team.html">Наша
+              команда</a><br><a href="news.html">новости</a><br><a href="work.html">работа в студии</a><br><a
+              href="vacansy.html">вакансии</a><br><a href="pricing.html">покупки</a></p>
+          <table cellpadding=0 cellspacing=0 width=250
+            style="border:solid 1px #2062fe;font-family:Verdana;font-size:8px;background-color:#20e9fe;margin:auto auto">
+            <tr>
+              <td>
+                <table width=100% cellpadding=0 cellspacing=0>
+                  <tr>
+                    <td width=8 height=20 background="https://rp5.ru/informer/htmlinfa/topshl.png" bgcolor=#2062fe>
+                    </td>
+                    <td width=100px align=center background="https://rp5.ru/informer/htmlinfa/topsh.png"
+                      bgcolor=#2062fe><a style="color:#ffffff; font-family:Verdana;font-size: 12px;"
+                        href="https://rp5.ru/6290/ru"><b>Омск</b></a></td>
+                    <td width=8 height=30 background="https://rp5.ru/informer/htmlinfa/topshr.png" bgcolor=#2062fe> 
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td valign=top style="padding:0;"><iframe
+                  src="https://rp5.ru/htmla.php?id=6290&lang=ru&um=00000&bg=%2320e9fe&ft=%23ffffff&fc=%232062fe&c=%23021207&f=Verdana&s=12&sc=3"
+                  width=100% height=207 frameborder=0 scrolling=no style="margin:0;"></iframe></td>
+            </tr>
+          </table>
+
+          <!-- код счетчик просмотров -->
+          <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+          <script>
+            // Ваша конфигурация Firebase
+            var firebaseConfig = {
+              apiKey: "your-api-key",
+              authDomain: "your-auth-domain",
+              databaseURL: "your-database-url",
+              projectId: "your-project-id",
+              storageBucket: "your-storage-bucket",
+              messagingSenderId: "your-messaging-sender-id"
+            };
+            firebase.initializeApp(firebaseConfig);
+
+            var page = window.location.href;
+            var pageViewsRef = firebase.database().ref('page_views/' + btoa(page));
+
+            pageViewsRef.transaction(function (views) {
+              return views + 1;
+            });
+
+            pageViewsRef.on('value', function (snapshot) {
+              document.getElementById('page-views').innerText = 'Просмотров: ' + snapshot.val();
+            });
+          </script>
+          <div id="page-views">Просмотров сайта: 0</div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-12 media-links">
+          <a href="https://telegram.org/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+              src="source/files/tg.png" alt="111"></a>
+          <a href="https://www.youtube.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+              src="source/files/yt.png" alt="222"></a>
+          <a href="instagram.com"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+              src="source/images/icons8-instagram-48.png" alt="111"></a>
+          <a href="https://vk.com"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+              src="source/images/icons8-vk-48.png" alt="222"></a>
+          <a href="https://web.whatsapp.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+              src="source/images/icons8-whatsapp-48.png" alt="111"></a>
+          <a href="https://github.com/"><img style="width: 40px; margin-inline: 10px; padding-top:15px"
+              src="source/images/proekt/icons8-github-50.png" alt="111"></a>
+
+
+        </div>
+      </div>
+    </div>
+    <marquee onmouseout="this.start()" onmouseover="this.stop()"><span style="color: red;"><b>Мы занимаемся поставкой
+      компьютеров, компьютерного оборудования. Разработкой сайтов для магазина/компании. Обращайтесь к
+      нам!!!💻🖥️</b></span></marquee>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    setInterval(function () {
+      var now = new Date();
+      var clock = document.getElementById("clock");
+      clock.innerHTML = now.toLocaleTimeString();
+    }, 1000);
+  </script>
+
+  <script>
+    function calendar(id, year, month) {
+      var Dlast = new Date(year, month + 1, 0).getDate(),
+        D = new Date(year, month, Dlast),
+        DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
+        DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
+        calendar = '<tr>',
+        month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+      if (DNfirst != 0) {
+        for (var i = 1; i < DNfirst; i++) calendar += '<td>';
+      } else {
+        for (var i = 0; i < 6; i++) calendar += '<td>';
+      }
+      for (var i = 1; i <= Dlast; i++) {
+        if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+          calendar += '<td class="today">' + i;
+        } else {
+          calendar += '<td>' + i;
+        }
+        if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
+          calendar += '<tr>';
+        }
+      }
+      for (var i = DNlast; i < 7; i++) calendar += '<td> ';
+      document.querySelector('#' + id + ' tbody').innerHTML = calendar;
+      document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D.getFullYear();
+      document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
+      document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
+      if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) {
+        // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+        document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
+      }
+    }
+    calendar("calendar", new Date().getFullYear(), new Date().getMonth());
+    // переключатель минус месяц
+    document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function () {
+      calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
+    }
+    // переключатель плюс месяц
+    document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function () {
+      calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
+    }
+  </script>
+
+  <script type="text/javascript">
+    var lastResFind = ""; // последний удачный результат
+    var copy_page = ""; // копия страницы в ихсодном виде
+    function TrimStr(s) {
+      s = s.replace(/^\s+/g, '');
+      return s.replace(/\s+$/g, '');
+    }
+    function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+      var obj = window.document.getElementById(inputId);
+      var textToFind;
+
+      if (obj) {
+        textToFind = TrimStr(obj.value);//обрезаем пробелы
+      } else {
+        alert("Введенная фраза не найдена");
+        return;
+      }
+      if (textToFind == "") {
+        alert("Вы ничего не ввели");
+        return;
+      }
+
+      if (document.body.innerHTML.indexOf(textToFind) == "-1")
+        alert("Ничего не найдено, проверьте правильность ввода!");
+
+      if (copy_page.length > 0)
+        document.body.innerHTML = copy_page;
+      else copy_page = document.body.innerHTML;
+
+
+      document.body.innerHTML = document.body.innerHTML.replace(eval("/name=" + lastResFind + "/gi"), " ");//стираем предыдущие якори для скрола
+      document.body.innerHTML = document.body.innerHTML.replace(eval("/" + textToFind + "/gi"), "<a name=" + textToFind + " style='background:red'>" + textToFind + "</a>"); //Заменяем найденный текст ссылками с якорем;
+      lastResFind = textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+      window.location = '#' + textToFind;//перемещаем скрол к последнему найденному совпадению
+    }
+  </script>
+
+</body>
+
+</html>

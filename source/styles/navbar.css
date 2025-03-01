@@ -1,0 +1,70 @@
+.navbar{
+    display: flex;
+    background-color: rgb(29, 28, 28);
+}
+.nav-list {
+    display: flex;
+}
+.nav-list a{
+    display: block;
+    padding: 1.5em;
+    text-decoration: none; 
+    /* нет подчеркивания в ссылке */
+    color: white;
+}
+
+.nav-list a:hover{
+    background-color: rgb(94, 90, 90);
+}
+
+.nav-btn{
+   display: none;
+}
+
+@media (max-width: 1000px) {
+    .nav-btn{
+        font-size: 3em;
+        padding-inline: 10px;
+        padding-bottom: 2px;
+        border: none;
+        background-color: rgb(29, 28, 28);
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+    .nav-list{
+        display: none;
+    }
+
+    .nav-btn:hover{
+        background-color: rgb(94, 90, 90);
+    }
+
+    .drop:hover .nav-list{
+        display: block;
+        position: absolute;
+        right: 2px;
+        /* top: 100px;
+        left: 150px; */
+        background-color: rgb(29, 28, 28);
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+}
+
+.active {
+   
+    margin-top: 20px;
+    text-decoration: solid;
+    color: darkblue;
+ 
+}
+
+.active_1 {
+   
+    margin-top: 20px;
+    text-decoration: solid;
+    color: rgb(139, 0, 0);
+ 
+}

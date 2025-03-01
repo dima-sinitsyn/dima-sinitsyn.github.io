@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+
+
+body {
+    font-family: Michroma, serif;
+   
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+    
+}
+
+.telephone a,h5{
+    font-weight: 800;
+   
+    font-style: italic;
+    text-align: center;
+   
+}
+
+
+p {
+    color: aquamarine;
+    margin: auto auto;
+    text-align: center;
+}
+
+.nav-link {
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(255, 127, 148)
+}
+
+
+
+
+.navbar-brand img {
+    width: 50px;
+
+}
+
+.navbar-brand {
+    color: #04d9ff;
+}
+
+
+/* время часов */
+.clock {
+    color: #04d9ff;
+    border: none;
+    
+
+
+
+}
+
+
+.navbar-toggler {
+    background-color: rgb(255, 127, 133);
+}
+
+/* .navbar-toggler-icon1 {
+    background-color: rgb(20, 145, 25);
+    background: fixed;
+} */
+
+
+.sidebar {
+    color: rgb(160, 95, 103);
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+}
+
+.card {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width:auto;
+    text-transform: lowercase;
+    text-align: center;
+   
+
+}
+/*  
+
+.hover1 a{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.hover1 a:hover{
+    color: white;
+    background-color: black;
+} */
+
+
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.card p {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+.card h4 {
+    color: aquamarine;
+    font-style: italic;
+}
+
+/* .carousel-inner1 img{
+    width: 300px;
+    height: 300px;
+    
+
+} */
+
+.card img {
+    display: block;
+    width:auto;
+    height: 270px;
+  
+}
+
+
+.slide-t,
+.footer-t {
+    color: aquamarine;
+    margin: auto auto;
+} 
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-an {
+    animation: myAnim 5s ease 2s 1 normal forwards;
+}
+
+@keyframes myAnim {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+
+    10% {
+        transform: rotate(8deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(-8deg);
+    }
+
+    90% {
+        transform: rotate(8deg);
+    }
+}
+
+@media (max-width:755px) {
+    .carousel-indicators {
+       display: none;
+
+    }
+
+
+}
+
+
+footer,
+.btn-primary {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+}
+
+dl {
+    color: darkred;
+
+}
+
+address {
+    color: crimson;
+    text-align: center;
+    margin: 20px;
+    padding: auto;
+}
+
+.contact {
+    text-align: center;
+
+}
+
+
+/* css для календаря */
+
+.look-calendar {
+    width: 230px;
+    border: 1px solid #1d8258;
+    padding: 5px;
+    margin: 10px auto;
+
+}
+
+#calendar {
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    border-spacing: 2px;
+    color: azure;
+
+}
+
+#calendar tr.dn td {
+    font-size: 15px;
+}
+
+#calendar thead tr:last-child {
+    font-size: 5px;
+    color: #fe019a;
+}
+
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+    color: #04d9ff;
+}
+
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: alias;
+}
+
+#calendar tbody td {
+    color: #494e5296;
+}
+
+#calendar tbody td:nth-child(n+6),
+#calendar .holiday {
+    color: #5c9fe7;
+}
+
+#calendar tbody td.today {
+    background: #dc0000;
+    color: #fff;
+}
+
+center {
+    margin: 0 auto;
+}
+
+.carousel-caption p {
+    color: #fe019a;
+    font-weight: 700;
+}
+
+.carousel-caption h5 {
+    font-weight: 700;
+}
+
+.d-flex{
+    max-width: 500px;
+    margin-left: auto auto;
+    
+}
+
+.carousel-inner{
+    display: flex;
+    transition: all;
+}
+h3{
+    text-align: center;
+}
+.some{
+    margin: auto auto;
+    text-align: center;
+    color: #dc0000;
+    font-weight: 500;
+}
+.w-100 {
+    height:100%;
+    margin: 0px;
+    padding: 30px;
+    width:100%;
+    
+    text-align: center;
+   
+}
+
+.w-100 img{
+    height:400px;
+    margin: 10px;
+    padding: 10px;
+    width:300px;
+    justify-content:center;
+    
+}
+
+/* настраиваемое изображение для 755px максимум */
+@media (max-width:755px) {
+    .carousel-indicators {
+       display: none;
+
+    }
+    .w-100 img{
+        height:300px;
+        margin:auto auto;
+        
+        width:380px;
+        padding: 20px;
+    }
+   
+    .collapse {
+        text-align: center;
+    }
+    .card img{
+        height:auto;
+        margin:auto auto;
+        width:350px;
+        padding: 20px;
+    }
+    .carousel-inner1 img{
+        width: 300px;
+        height: 300px;
+        
+    
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+.telephone{
+    font-weight: 800;
+    color: aqua;
+    font-style: italic;
+    
+}
+
+.carousel-inner1{
+    height:200px;
+    margin:auto auto;
+    padding: auto auto;
+    width:200px;
+   
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+    
+}
+
+
+
+
+/* Мигающий текст 1*/
+
+@-webkit-keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+   }
+   @keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+   }
+   #blink3 {
+     color: rgb(245,245,245);
+     text-shadow: 0 -1px rgba(0,0,0,.1);
+    
+     -webkit-animation: pulsate 1.2s linear infinite;
+     animation: pulsate 1.2s linear infinite;
+   }
+
+
+
+
+/* Мигающий текст 2*/
+   @-webkit-keyframes blink6 {
+    10% { transform: scale(1, 1) rotate(80deg); }
+    20% { transform: scale(0, 0) rotate(160deg); }
+    100% { transform: scale(0, 0) rotate(0deg); }
+   }
+   @keyframes blink6 {
+    10% { transform: scale(1, 1) rotate(80deg); }
+    20% { transform: scale(0, 0) rotate(160deg); }
+    100% { transform: scale(0, 0) rotate(0deg); }
+   }
+   #blink6 {
+     position: relative;
+     display: inline-block;
+     color: #fff;
+     text-shadow: 0 0 10px #3d7a97;
+     
+   }
+   #blink6:after, #blink6:before {
+     content: "R@bot/studio🤖";
+     position: absolute; top: 0; left: 0;
+     display: block;
+     width: 100px;
+     height: 100px;
+     background-image: 
+       radial-gradient(rgba(255,255,255,1), rgba(255,255,255,0) 30%),
+       linear-gradient(45deg, rgba(0,0,0,0) 49%, rgba(255,255,255,.4) 50%, rgba(0,0,0,0) 51%),
+       linear-gradient(135deg, rgba(0,0,0,0) 49%, rgba(255,255,255,.4) 50%, rgba(0,0,0,0) 51%);
+     -webkit-animation: blink6 10s linear infinite;
+     animation: blink6 10s linear infinite;
+     transform: scale(0, 0) rotate(0deg);
+   }
+   #blink6:before {
+     top: -30%;
+     right: 0; left: auto;
+     -webkit-animation-delay: 5s;
+     animation-delay: 5s;
+   }
+
+   /* Мигающий текст3 */
+
+
+@-webkit-keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+#blink7 {
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+
+
+/* эффект движения */
+@keyframes  move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100px);
+    }
+    
+}
+
+.cat {
+    animation: move 2s ease infinite;
+  }
+
+
+/* эффект смены цвета текста */
+.some {
+    color: #4CAF50;
+    transition: color 1s ease;
+  }
+.some:hover {
+    color: #8e3e5e;
+}
+

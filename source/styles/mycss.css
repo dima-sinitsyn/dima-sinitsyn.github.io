@@ -484,3 +484,17 @@ h3{
     color: #8e3e5e;
 }
 
+
+/* ссылка отзыв приближение */
+.element {
+    font-size: 20px;
+    color:darkmagenta;
+    transform: scale(1);
+    transition: transform 0.5s;  /* Делаем переход плавным */
+  }
+.element:hover {
+    font-size: 35px;
+    color:red;  /* бурый цвет заменяется на Красный цвет  */
+    transform: scale(1.5);
+  }
+

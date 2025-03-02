@@ -563,32 +563,26 @@
                     </table>
 
                     <!-- код счетчик просмотров -->
-                    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-                    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
-                    <script>
-                        // Ваша конфигурация Firebase
-                        var firebaseConfig = {
-                            apiKey: "your-api-key",
-                            authDomain: "your-auth-domain",
-                            databaseURL: "your-database-url",
-                            projectId: "your-project-id",
-                            storageBucket: "your-storage-bucket",
-                            messagingSenderId: "your-messaging-sender-id"
-                        };
-                        firebase.initializeApp(firebaseConfig);
-
-                        var page = window.location.href;
-                        var pageViewsRef = firebase.database().ref('page_views/' + btoa(page));
-
-                        pageViewsRef.transaction(function (views) {
-                            return views + 1;
+                       <script type="text/javascript">
+                        (function (m, e, t, r, i, k, a) {
+                          m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                          m[i].l = 1 * new Date();
+                          for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+                          k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+                        })
+                          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+            
+                        ym(100134400, "init", {
+                          clickmap: true,
+                          trackLinks: true,
+                          accurateTrackBounce: true
                         });
-
-                        pageViewsRef.on('value', function (snapshot) {
-                            document.getElementById('page-views').innerText = 'Просмотров: ' + snapshot.val();
-                        });
-                    </script>
-                    <div id="page-views">Просмотров сайта: 0</div>
+                      </script>
+                      <noscript>
+                        <div><img src="https://mc.yandex.ru/watch/100134400" style="position:absolute; left:-9999px;" alt="" />
+                        </div>
+                      </noscript>
+                      
                 </div>
 
                 <div class="col-lg-4 col-md-12 media-links">
